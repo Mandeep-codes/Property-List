@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# Simple Properties Page 🏡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, single-page application built with a modern React stack to manage a list of properties. This project demonstrates fundamental CRUD (Create, Read, Update, Delete) operations and real-time filtering.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ## Features ✨
 
-## Expanding the ESLint configuration
+* **View** a list of all properties in a card-based layout.
+* **Add** a new property using a pop-up dialog form.
+* **Delete** an existing property with a confirmation step to prevent accidents.
+* **Search** for properties in real-time by name or address.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ## Tech Stack 🛠️
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project was built using a modern, type-safe frontend stack:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Vite:** Next-generation frontend tooling for a fast development experience.
+* **React:** A JavaScript library for building user interfaces.
+* **TypeScript:** A statically typed superset of JavaScript that adds type safety.
+* **Tailwind CSS:** A utility-first CSS framework for rapid styling.
+* **ShadCN/UI:** A collection of beautifully designed, re-usable components built with Radix UI and Tailwind CSS.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ## Getting Started 🚀
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To get a local copy up and running, follow these simple steps.
+
+### ### Prerequisites
+
+Make sure you have Node.js and Yarn installed on your machine.
+
+* Node.js (v18 or later)
+* Yarn
+
+### ### Installation
+
+1.  **Clone the repo**
+    ```sh
+    git clone [https://github.com/Mandeep-codes/Property-List.git](https://github.com/Mandeep-codes/Property-List.git)
+    ```
+2.  **Navigate to the project directory**
+    ```sh
+    cd Property-List
+    ```
+3.  **Install YARN packages**
+    ```sh
+    yarn install
+    ```
+4.  **Run the development server**
+    ```sh
+    yarn dev
+    ```
+
+The application will be available at `http://localhost:5173`.
